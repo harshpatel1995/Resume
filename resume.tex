@@ -1,0 +1,95 @@
+\documentclass{my_resume_class}
+
+
+\NewDocumentCommand\createlist{>{\SplitList{;}}m}
+   {
+     \begin{itemize}
+      \setlength\itemsep{.00cm}
+      \ProcessList{#1}{ \insertitem }
+     \end{itemize}
+   }
+
+\newcommand\insertitem[1]{
+
+  \item #1
+}
+
+\newcommand{\datedsection}[2]{%
+  \section[#1]{#1 \hfill #2}%
+}
+
+\newcommand{\datedsubsection}[2]{%
+  \subsection[#1]{#1 \hfill #2}%
+}
+
+\newcommand{\name}[1]{
+   \centerline{\textsc{\huge{#1}}}
+}
+
+\newcommand{\contact}[1]{
+   \centerline{\normalsize{#1}}
+}
+
+
+\begin{document}
+
+\name{Harsh Patel}
+\vspace{0.1cm}
+\contact{275 Capron Road, Cocoa, FL - 32927}
+\vspace{0.05cm}
+\contact{E-mail : \href{mailto:hurr03@gmail.com}{hurr03@gmail.com}}
+\vspace{0.05cm}
+\contact{Phone : 321-525-9604 }
+
+\section{Skills}
+{\textbf{Comfortable}  \hspace{0.80cm} C\hspace{0.50cm} Java\hspace{0.50cm} Python\hspace{0.50cm} SQL\hspace{0.50cm} Bash Scripting\hspace{0.50cm} Git\hspace{0.50cm} Android\hspace{0.50cm} Docopt } \\
+{\textbf{Familiar}  \hspace{1.25cm} C++\hspace{0.50cm} R\hspace{0.80cm} LaTeX\hspace{0.50cm} XML\hspace{0.50cm} Concurrent Programming\hspace{0.50cm} Haskell 
+
+\section{Education}
+\datedsubsection{\textbf{Bachelors in Computer Science}, University of Central Florida, Orlando, FL - 32816}  {Graduation: May 2017}
+\createlist{In-Major GPA : 3.7;  
+President's Honor Roll - Spring 2016}
+
+\section{Work Experience}
+\datedsubsection{\textbf{Teaching Assistant}, Database Management Systems, University of Central Florida} {Spring 2017}
+\createlist{Proctored and graded student exams and assignments;
+ Met with 40 student groups individually to review and grade the course project; 
+Answered student questions about the course content \textbf{(SQL} and \textbf{XML)} and grading policies}
+
+\datedsubsection{\textbf{Part-Time Employee}, Star Liquor} {2014 - Present}
+\createlist{Process customer sales transactions and stock store inventory upon delivery}
+
+\section{Projects}
+\datedsubsection{\textbf{Metagenomic Taxonomic Inference}} {Fall 2016 - Present}
+\createlist{Source: \href{https://github.com/harshpatel1995/mti}{https://github.com/harshpatel1995/mti};
+Designed a software package for \textbf{Ubuntu 16.04} to infer and visualize relative abundances of microbial genomes present in a metagenomic sample using \textbf{Docopt} for command-line interface;
+Implemented GRAMMy in \textbf{C++} to statistically infer the genome relative abundance of a sample using mixture models;
+Implemented a data visualization module in \textbf{Python} using \textbf{Pandas DataFrames}, \textbf{ETE Toolkit} and \textbf{Seaborn}}
+
+\datedsubsection{\textbf{My Fitness Buddy}} {Spring 2016}
+\createlist{Source: \href{https://github.com/harshpatel1995/MyFitnessBuddy.git}{https://github.com/harshpatel1995/MyFitnessBuddy.git};
+Created an \textbf{Android} application for users to create, log and track workouts;
+Implemented functionality using \textbf{Java} and layouts using \textbf{XML};
+Designed a \textbf{SQLite} database to store, retrieve and query user data}
+
+
+
+\section{Volunteer}
+\datedsubsection{\textbf{Notetaking Volunteer}, Student Accessibility Services, University of Central Florida} {Spring 2017}
+
+
+\section{References}
+
+\subsection{\textbf{Dr. Shibu Yooseph}, Professor, Genomics and Bioinformatics Cluster Lead, University of Central Florida}
+\createlist{Sponsor and mentor for Metagenomics Taxonomic Inference Project;
+E-mail : \href{mailto:Shibu.Yooseph@ucf.edu}{Shibu.Yooseph@ucf.edu} \hspace{3.0cm} Phone : 407-823-5307}
+
+\subsection{\textbf{Dr. Khanh Vu}, Professor, Department of Electrical Engineering and Computer Science, University of Central Florida}
+\createlist{Professor for the Teaching Assistant position for Database Management Systems;
+E-mail : \href{mailto:Khanh.Vu@ucf.edu}{Khanh.Vu@ucf.edu}}
+
+
+
+
+\end{document}
+
