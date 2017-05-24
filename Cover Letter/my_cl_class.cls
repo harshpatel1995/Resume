@@ -13,3 +13,5 @@
   urlcolor=red%
 ]{hyperref}% http://ctan.org/pkg/hyperref
 \usepackage{xparse}
+
+\linespread{1.3}
