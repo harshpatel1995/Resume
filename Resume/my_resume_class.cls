@@ -10,7 +10,7 @@
 {0pt}{2.0ex plus 1ex minus .2ex}{1.0ex plus .2ex}
 
 
-\usepackage[margin=0.50in]{geometry}
+\usepackage[margin=0.75in]{geometry}
 \usepackage{mathpazo}
 \usepackage{tabto}
 \usepackage[%
