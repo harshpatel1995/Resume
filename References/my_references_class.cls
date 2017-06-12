@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{my_resume_class}[2015/05/27 Custom Resume Class]
+\ProvidesClass{my_references_class}[2015/06/12 Custom References Class]
 \LoadClass{article}
 \RequirePackage{titlesec}
 

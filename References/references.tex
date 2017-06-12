@@ -1,0 +1,43 @@
+\documentclass{my_references_class}
+
+\NewDocumentCommand\createlist{>{\SplitList{;}}m}
+{
+     \begin{itemize}
+      \setlength\itemsep{.00cm}
+      \ProcessList{#1}{ \insertitem }
+     \end{itemize}
+}
+
+\newcommand\insertitem[1]{
+  \item #1
+}
+
+\newcommand{\name}[1]{
+   \centerline{\textsc{\huge{#1}}}
+}
+
+\newcommand{\contact}[1]{
+   \centerline{\normalsize{#1}}
+}
+
+\begin{document}
+
+\name{Harsh Patel}
+\vspace{0.1cm}
+\contact{275 Capron Road, Cocoa, FL - 32927}
+\vspace{0.05cm}
+\contact{E-mail : \href{mailto:hurr03@gmail.com}{hurr03@gmail.com}}
+\vspace{0.05cm}
+\contact{Phone : 321-877-4174 }
+
+\section{References}
+\subsection{\textbf{Dr. Shibu Yooseph}, Computer Science Professor, Genomics and Bioinformatics Cluster Lead, University of Central Florida}
+\createlist{Sponsor and mentor for Metagenomics Taxonomic Inference Project;
+E-mail : \href{Shibu.Yooseph@ucf.edu}{Shibu.Yooseph@ucf.edu};
+Phone : 407-823-5307}
+\subsection{\textbf{Dr. Khanh Vu}, Professor, Department of Electrical Engineering and Computer Science, University of Central Florida}
+\createlist{Professor for the Teaching Assistant position for Database Management Systems;
+E-mail : \href{mailto:Khanh.Vu@ucf.edu}{Khanh.Vu@ucf.edu}
+}
+
+\end{document}
